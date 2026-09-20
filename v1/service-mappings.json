@@ -1,0 +1,50 @@
+{
+  "formatVersion": 1,
+  "rules": [
+    {
+      "type": "season",
+      "service": "simkl",
+      "numbering": "tvdb",
+      "note": "The Grand Tour is one Simkl entry. Its season 7 is the 2026 revival, which TMDB carries as a separate show starting at season 1.",
+      "from": {
+        "tmdb": 67557,
+        "season": 7
+      },
+      "to": {
+        "tmdb": 329471,
+        "season": 1,
+        "episodeOffset": 0,
+        "episodeCount": 6
+      }
+    },
+    {
+      "type": "entry",
+      "service": "simkl",
+      "note": "The revival has no TVDB id and an IMDb id too new for Simkl to index, so writes to this entry carry the 2016 run's ids.",
+      "entry": {
+        "tmdb": 67557
+      },
+      "ids": {
+        "imdb": "tt5712554",
+        "tmdb": 67557,
+        "tvdb": 314087
+      }
+    },
+    {
+      "type": "season",
+      "service": "simkl",
+      "numbering": "tvdb",
+      "note": "Simkl keeps both LEGO Star Wars: Rebuild the Galaxy runs as one entry. Its season 2 is Pieces of the Past, which TMDB carries as a separate show with no external ids at all, so a write addressed by that show reaches nothing.",
+      "from": {
+        "tmdb": 253760,
+        "season": 2
+      },
+      "to": {
+        "tmdb": 289411,
+        "season": 1,
+        "episodeOffset": 0,
+        "episodeCount": 4
+      }
+    }
+  ]
+}
